@@ -1,0 +1,16 @@
+body{
+  background-color:white;
+}
+div.uni{
+  background-color: lightblue;
+  border-style: double;
+
+
+}
+div.module{
+  background-color:yellow;
+  border-style: double;
+}
+h2{
+  text-align: center;
+}

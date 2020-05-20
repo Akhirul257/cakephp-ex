@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/addPost.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+
+<script>
+function preventDefaul() {
+  var x = document.forms["myForm"]["fname"].value;
+  var y = document.forms["myForm"]["message"].value
+  if (x == "" ) {
+    alert("Subject  must be filled out");
+    return false;
+  }
+  if (y == "" ) {
+    alert("Message must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+  <div class="content">
+  <h1>Post</h1>
+  <b>First</b><br><hr>
+  <p>this is my first blog<p>
+
+  <b>This Blog</b><br><hr>
+  <p>This blog is created with html, css, Js and Php. <p>
+  </div>
+<div class="container">
+    <div class="row">
+      <div style="text-align:center">
+        <h1>Add Your Post</h1>
+      </div>
+
+<form name="myForm" action="addPost.php" onsubmit="return preventDefaul()" method="post">
+  <input type="text" placeholder="Subject..."name="fname">
+  <textarea type="text" id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
+  <input type="submit" value="Submit">
+  <input type="reset" value="Clear">
+</form>
+
+</div>
+</div>
+
+</body>
+</html>

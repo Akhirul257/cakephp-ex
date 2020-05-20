@@ -1,0 +1,23 @@
+
+tittle{
+  text-align:center;
+  background-color:pink;
+  foreground-color:blue;
+  font-size:20pt;
+  font-family:serif;
+}
+body{
+  background-color:powderblue;
+}
+table{
+  width:50%;
+}
+th{
+  border:1px solid brown;
+  padding:5px;
+  background-color:blue;
+}
+td{
+  border:1px solid brown;
+  padding:5px;
+}

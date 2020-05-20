@@ -1,0 +1,49 @@
+<html>
+<head>
+  <!....external css.... >
+<link rel="stylesheet" type="text/css" href="extra.css">
+</head>
+
+<body>
+<h1> Multiplication Table </h1>
+<div>
+<script>
+
+  var f="X";
+  document.write("<table>");
+  document.write("<tr>");
+  var a=0;
+//  <!....do while>
+  do{
+    if (a==0){
+        document.write("<th>"+f+"</th>");
+    }
+    else{
+      document.write("<th>"+a+"</th>");
+    }
+    a++;
+  }while(a<=15)
+  document.write("</tr>");
+var i=1;
+//<!....while loop>
+  while(i<=15){
+    document.write("<tr>");
+    //for loop
+    for(var j=1; j<=15; j++){
+      if(j==1){
+          document.write("<th>"+i*j+"</th>");
+          document.write("<td>"+i*j+"</td>");
+      }
+      else{
+          document.write("<td>"+i*j+"</td>");
+      }
+    }
+    i++
+    document.write("</tr>");
+  }
+  document.write("</table>");
+  </script>
+<h2>javaScript</h2>
+</div>
+</body>
+</html>
